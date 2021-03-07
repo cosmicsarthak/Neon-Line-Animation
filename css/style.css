@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    /* background: linear-gradient(30deg, rgba(0,0,0,1) 0%, rgba(19,4,59,1) 30%, rgba(88,13,231,1) 100%); */
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+.stage {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* overflow: hidden; */
+
+}
+
+.stage .rotate {
+    position: relative;
+    width: 100vw;
+    height: 100rem;
+    transform: rotate(-30deg);
+    overflow: hidden;
+}
+
+/* .stage::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(4rem);
+    z-index: -1;
+    transform: scale(1.15);
+} */
+
+.stage span {
+    position: absolute;
+    border-radius: 10px;
+}
+
+.stage span.s1 {
+    /* left: 300px;
+    top: 300px;
+    width: 200px;
+    height: 6px; */
+    background-color: rgb(94, 254, 255);
+    box-shadow: 0 0 5px rgba(94, 254, 255, .7),
+                0 0 10px rgba(94, 254, 255, .7),
+                0 0 20px rgba(94, 254, 255, .7),
+                0 0 30px rgba(94, 254, 255, .7);
+}
+
+.stage span.s2 {
+    /* left: 300px;
+    top: 400px;
+    width: 100px;
+    height: 18px; */
+    background-color: rgb(255, 255, 62);
+    box-shadow: 0 0 5px rgba(255, 255, 62, .7),
+                            0 0 10px rgba(255, 255, 62, .7),
+                            0 0 20px rgba(255, 255, 62, .7),
+                            0 0 30px rgba(255, 255, 62, .7);
+}
+
+.stage span.s3 {
+    /* left: 600px;
+    top: 200px;
+    width: 150px;
+    height: 4px; */
+    background-color: rgb(247, 131, 220);
+    box-shadow: 0 0 5px rgba(247, 131, 220, .7),
+                0 0 10px rgba(247, 131, 220, .7),
+                0 0 20px rgba(247, 131, 220, .7),
+                0 0 30px rgba(247, 131, 220, .7);
+}
+
+
+.txt {
+    position: relative;
+    z-index: 2;
+    font-size: 140%;
+    color: rgb(0, 0, 0);
+}
+
